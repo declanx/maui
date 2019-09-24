@@ -30,7 +30,7 @@ Use the 'W', 'A', 'S', 'D' keys to
 move around the board. Remember, each second
 move uses up food.
 """)
-    color.write('>> Press enter to continue.', 'BUILTIN')
+    color.write('>> Press enter to continue. ', 'BUILTIN')
     input()
     time.sleep(0.3)
     print("""
@@ -39,7 +39,7 @@ to collect food on the way. This      -_- -_-
 is what a fish tile looks like  -->   _  ⤬  _
 Just move to the tile to collect it!   -__-__ 
 """)
-    color.write('>> Press enter to continue.', 'BUILTIN')
+    color.write('>> Press enter to continue. ', 'BUILTIN')
     input()
     time.sleep(0.3)
     print("""
@@ -49,7 +49,7 @@ collecting story bottles. These look like this:
 _  ⤬  _    <-- Collect me and read the story!
   ͖   -_
 """)
-    color.write('>> Press enter to continue.', 'BUILTIN')
+    color.write('>> Press enter to continue. ', 'BUILTIN')
     input()
     time.sleep(0.7)
     breakline()
@@ -57,8 +57,8 @@ _  ⤬  _    <-- Collect me and read the story!
 # board printer function
 def board(world):
     # define board pieces
-    chunks   = [' _- _- ', ' _   -_', '-  - _-', '-  _   ']
-    fish     = ['-_- -_-', '_  ⤬  _', '-__-__ ']
+    chunks   = [' _  _- ', ' _   -_', '-  - _ ', '-  _   ']
+    fish     = ['-_  -_ ', '_  ⤬  _', '-  - _ ']
     boat     = ['   \O, ', '\__/\)/', '  -_ \-']
     bottle   = ['  -  - ', '   !  _', '  ͖   -_']
     rock     = ['   . , ', ' ` ⋀^ ,', '  ^_`- ']
@@ -190,7 +190,7 @@ def main():
     # introduce game
     breakline()
     print("\n\n\n\n\n\nWelcome to Māui's story board game.\n\n\nYou will play on a 6x6 board where you must\nstay alive by moving around and collecting fish\non the board.\n\nOn your trip you will uncover the story of Maui\nand Aotearoa, Good luck!\n\nUnfortunately Māui does not have an accent mark\nabove his name throughout the game as it causes\nit to crash.\n\n\nPlease resize the window width so the breakline\nabove is a single line.\n")
-    color.write('>> Press enter to start the tutorial.\n\n\n\n\n\n\n', 'BUILTIN')
+    color.write('>> Press enter to start the tutorial. \n\n\n\n\n\n\n', 'BUILTIN')
     input()
     tutorial()
     # shuffle default world tiles and turn into editable list
